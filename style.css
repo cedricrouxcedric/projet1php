@@ -1,0 +1,393 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@media screen and (min-width: 769px) {
+  .burger {
+    display: none;
+  }
+  .burgerMenu {
+    display: block;
+    position: static;
+    margin: 0;
+  }
+  #navMenu {
+    background-image: url('https://www.ombres-blanches.fr/uploads/tx_tableslibraires/jazz.jpg');
+    display: block;
+    border-radius: 0%;
+    opacity: 1;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  nav ul li {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.7vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+  .logos {
+    height: 50px;
+    margin: 0.5rem;
+    margin-bottom: 20px;
+  }
+  footer {
+    border: 1px black solid;
+    background-color: #191516;
+    color: #92817a;
+    padding: 0;
+    font-size: 2.5vw;
+  }
+  .container {
+    display: flex;
+  }
+  .evenly {
+    justify-content: space-evenly;
+  }
+  .between {
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1000px) {
+  footer p {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+  .logos {
+    height: 50px;
+    margin: 0.5rem;
+    margin-bottom: 20px;
+  }
+}
+.burgerMenu {
+  position: fixed;
+  margin: 1vw;
+}
+.burger {
+  height: 7vw;
+  min-height: 4rem;
+}
+#navMenu {
+  display: none;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Miles_Davis-140916-0016-103WP.jpg/220px-Miles_Davis-140916-0016-103WP.jpg');
+  padding: 0.5vw;
+  opacity: 0.7;
+  border-radius: 0 10% 10% 0;
+}
+nav ul li {
+  display: block;
+  color: yellow;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+a {
+  text-decoration: none;
+  font-family: 'Lobster Two', cursive;
+  color: #daa520;
+}
+a:hover {
+  color: white;
+}
+.concerts h2 {
+  font-size: 4em;
+}
+.concerts p {
+  width: 80%;
+  margin: auto;
+}
+.logos {
+  height: 4vw;
+  margin: 0.5rem;
+  margin-bottom: 1vh;
+}
+footer {
+  border: 1px black solid;
+  background-color: #191516;
+  color: grey;
+  padding: 5px 10px;
+  font-size: 2vw;
+}
+.container {
+  display: flex;
+}
+.evenly {
+  justify-content: space-evenly;
+}
+.between {
+  justify-content: space-between;
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: end;
+}
+/* Css Body */
+body {
+  background-color: white;
+}
+main {
+  background-color: white;
+  font-family: "Gayathri", sans-serif;
+  font-size: 12px;
+}
+.banner {
+  background-image: url("pictures/banner_picture_big.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  padding-top: 14rem;
+  padding-bottom:7rem;
+}
+.banner h1 {
+  text-align: left;
+  font-size: 2rem;
+  font-family: 'Lobster Two', cursive;
+}
+.logo {
+  width: 150px;
+  display: block;
+  align-self: baseline;
+  margin: 0rem auto;
+  border-radius: 20%;
+  margin-top: -6rem;
+}
+.introduction {
+  margin: 0rem 0rem 0rem 0rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  padding: 2rem 0rem 2rem 0rem;
+}
+.introduction h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: 'Lobster Two', cursive;
+}
+.transition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lobster Two', cursive;
+  text-align: center;
+}
+.transitionBackground{
+  background-color: black;
+  margin-bottom: 1rem;
+}
+.transitionpicture {
+  width: 20%;
+  border: 2px solid black;
+}
+.artistpictures {
+  width: 70%;
+  border: 2px solid black;
+}
+.part {
+  padding: 1rem;
+}
+.menu {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.picture_mobile {
+  width: 40%;
+}
+.menu_main{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 2rem;
+}
+.menu_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+.menu_card {
+  width: 50%;
+  margin-top: 1rem;
+}
+.colored_font{
+  color: #daa520;
+}
+.shows {
+  display: flex;
+  flex-direction: column;
+}
+.containt_artist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.groupe_picture{
+  margin: 1rem;
+}
+.booking_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form_items {
+  display: flex;
+  flex-direction: column;
+  width:60%;
+}
+nav {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  background-color: black;
+}
+button{
+  width: 8rem;
+  background-color: #daa520;
+  color: black;
+  border-radius: 5px;
+  border: none;
+  padding: 3px;
+  margin-top: 10px;
+  margin: 10px auto;
+}
+button:hover{
+  background-color: black;
+  color: #daa520
+}
+.contact form{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+label{
+  margin-top: 1rem;
+}
+span{
+  text-align: center;
+}
+@media screen and (min-width: 1000px) {
+.banner{
+  height: 370px;
+  background-size: cover !important;
+  background-position: center;
+  background-attachment: fixed;
+}
+.banner h1{
+margin-top: -6%;
+font-size: 7rem;
+}
+.part{
+  padding: 3rem 5rem 5rem 5rem;
+  /* width: 100%; */
+  margin: auto;
+}
+.introduction{
+  margin: 2rem 0rem 2rem 0rem;
+}
+p{
+  font-size: 1.5rem;
+}
+.logo{
+  width:250px;
+  margin-top: -13rem;
+}
+.transition_title{
+  margin-top: 3rem;
+}
+hr{
+  margin-bottom: 1rem;
+}
+.menu{
+  flex-direction: row;
+  width: 80%;
+}
+.menu_main{
+  align-items: center;
+  height: 375px;
+  justify-content: space-around;
+  margin-left: 2rem;
+}
+.menu_card{
+  padding: 2rem;
+  border: 2px solid #daa520;
+  border-radius: 33px;
+  box-shadow: 3px 1px 1px#daa520;
+  font-size: 2rem; 
+  margin: 2rem 1rem 0rem 1rem; 
+}
+.containt_artist{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.containt_artist p{
+  width: 30%;
+}
+.fontSize{
+ font-size: 4em;
+}
+.picture_desktop{
+  width: 60%;
+  border-radius: 20px;
+}
+.groupe_picture{
+  width: 30%;
+}
+.booking{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form{
+  width: 60%;
+}
+.options_form{
+  margin: 1rem;
+}
+input{
+  height:2.5rem;
+  margin-bottom:1rem; 
+  margin-top: 1rem;
+  border: 1px solid black;
+}
+label{
+  font-size: 1.3rem;
+}
+textarea{
+  height:5rem;
+  margin-bottom:1rem; 
+  margin-top: 1rem;
+  border: 1px solid black;
+}
+button{
+  width:8rem;
+  padding: 1rem;
+}
+span{
+  font-size: 1.3rem;
+  }
+.titlebig{
+  font-size: 5rem;
+}
+}
