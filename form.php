@@ -16,13 +16,31 @@
 <body>
 <?php include("header.php") ?>
 
+
 <div class="container">
     <div class="column is-12">
         <section class="hero is-info is-bold is-small">
             <div class="hero-body">
                 <div class="container">
-                    <h1 class="title">Bonjour <?php echo $_GET['clientFirstname'].' '.$_GET['clientName']; ?>  votre
-                        message a bien été envoyé. </h1>
+                    <?php
+                    function mailcheck()
+                    {
+                        if (preg_match(" #^[^\W][a-zA-Z0-9_]+(\.[a-zA-Z0-9_]+)*\@[a-zA-Z0-9_]+(\.[a-zA-Z0-9_]+)*\.[a-zA-Z]{2,4}$# " ,$_GET['mailAdresse'])) {
+                            $message = '<h1 class="title">Bonjour '.  $_GET['clientFirstname'].' '.$_GET['clientName'].' '. $_GET['mailAdresse']. ' votre
+                            message a bien été envoyé </h1>';
+                        }
+                        elseif ($_GET['mailAdresse'] === ''){
+                            $message = 'Veuillez renseigner votre adresse mail s\'il vous plait';
+                        }
+                        else  {
+                            $message = '<h1 class="title">Veuillez saisir une adresse mail valide !</h1>';
+                        }
+                        return $message;
+                    }
+
+                    echo mailcheck();
+                    ?>
+
 
                 </div>
             </div>

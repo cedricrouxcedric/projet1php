@@ -78,6 +78,7 @@
                 <div class="concerts">
             <?php include("concerts.php");?>
                 </div>
+        </section>
 		<section id="Reserve" class="transition">
 			<div class="transitionBackground">
 				<img src="pictures/noteGold.png" class="transitionpicture" alt="notes de musique">
@@ -90,7 +91,11 @@
 		<section class="booking part">
 			<form action="form.php"  method="get" class="booking_form">
 				<div class="form_items">
-					<label for="clientName"> Votre nom : <abbr title="required">*</abbr></label>
+                    <label for="email">Entrer votre adresse mail :</label>
+                    <input id="mailAdresse" type="text"  name="mailAdresse">
+                </div>
+                <div class="form_items">
+					<label for="clientName"> Votre nom : </label>
 					<input id="clientName" type="text" name="clientName">
 				</div>
 				<div class="form_items">
@@ -106,7 +111,6 @@
 						bébé, ou autre...<abbr title="required">*</abbr></label>
 					<textarea id="message" name="message"></textarea>
 				</div>
-
 				<button type="submit" >Envoyer une demande de réservation</button>
 				<br>
 
@@ -158,8 +162,9 @@
 				<div class="form_items">
 					<textarea id="sendMessage" name="message"></textarea>
 				</div>
-				<button type="submit" onclick="Message_send_two()">Envoyer votre message</button>
+
 			</form>
+            <button type="submit" onclick="Message_send_two()">Envoyer votre message</button>
 		</section>
 	</main>
 
